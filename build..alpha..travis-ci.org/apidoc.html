@@ -1,0 +1,232 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/OpenBookPrices/country-data"
+
+    >country-data (v0.0.31)</a>
+</h1>
+<h4>Data about countries - like their ISO codes and currencies</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.country-data">module country-data</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>callingCodes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>callingCountries</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>continents</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>countries</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>currencies</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>languages</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>lookup</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>regions</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.country-data.lookup">module country-data.lookup</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.countries">
+            function <span class="apidocSignatureSpan">country-data.lookup.</span>countries
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.currencies">
+            function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.languages">
+            function <span class="apidocSignatureSpan">country-data.lookup.</span>languages
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.country-data" id="apidoc.module.country-data">module country-data</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.country-data.lookup" id="apidoc.module.country-data.lookup">module country-data.lookup</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.country-data.lookup.countries" id="apidoc.element.country-data.lookup.countries">
+        function <span class="apidocSignatureSpan">country-data.lookup.</span>countries
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">countries = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+console.log( regions.europe.countries )
+```
+
+``` javascript
+var lookup = require(&#x27;country-data&#x27;).lookup;
+
+// Match a value (grab first from array)
+var france = lookup.<span class="apidocCodeKeywordSpan">countries</span>({name: &#x27;France&#x27;})[0];
+
+// Or match one of several possible values.
+var eurozone_countries = lookup.countries({currencies: &#x27;EUR&#x27;});
+```
+
+It is very simple for now - feel free to contribute more helpful accessors.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.country-data.lookup.currencies" id="apidoc.element.country-data.lookup.currencies">
+        function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">currencies = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.country-data.lookup.languages" id="apidoc.element.country-data.lookup.languages">
+        function <span class="apidocSignatureSpan">country-data.lookup.</span>languages
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">languages = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
