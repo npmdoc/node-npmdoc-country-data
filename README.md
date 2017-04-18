@@ -1,9 +1,14 @@
-# api documentation for  [country-data (v0.0.31)](https://github.com/OpenBookPrices/country-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-country-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-country-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-country-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-country-data)
+# npmdoc-country-data
+
+#### api documentation for  [country-data (v0.0.31)](https://github.com/OpenBookPrices/country-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-country-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-country-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-country-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-country-data)
+
 #### Data about countries - like their ISO codes and currencies
 
-[![NPM](https://nodei.co/npm/country-data.png?downloads=true)](https://www.npmjs.com/package/country-data)
+[![NPM](https://nodei.co/npm/country-data.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/country-data)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-country-data/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-country-data_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-country-data/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-country-data/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-country-data/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-country-data/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-country-data/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-country-data/build/screenCapture.npmPackageListing.svg)
 
@@ -48,17 +53,14 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "evdb",
-            "email": "evdb@ecclestoad.co.uk"
+            "name": "evdb"
         },
         {
-            "name": "niftylettuce",
-            "email": "niftylettuce@gmail.com"
+            "name": "niftylettuce"
         }
     ],
     "name": "country-data",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/OpenBookPrices/country-data.git"
@@ -68,78 +70,6 @@
     },
     "version": "0.0.31"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module country-data](#apidoc.module.country-data)
-1.  object <span class="apidocSignatureSpan">country-data.</span>callingCodes
-1.  object <span class="apidocSignatureSpan">country-data.</span>callingCountries
-1.  object <span class="apidocSignatureSpan">country-data.</span>continents
-1.  object <span class="apidocSignatureSpan">country-data.</span>countries
-1.  object <span class="apidocSignatureSpan">country-data.</span>currencies
-1.  object <span class="apidocSignatureSpan">country-data.</span>languages
-1.  object <span class="apidocSignatureSpan">country-data.</span>lookup
-1.  object <span class="apidocSignatureSpan">country-data.</span>regions
-
-#### [module country-data.lookup](#apidoc.module.country-data.lookup)
-1.  [function <span class="apidocSignatureSpan">country-data.lookup.</span>countries ()](#apidoc.element.country-data.lookup.countries)
-1.  [function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies ()](#apidoc.element.country-data.lookup.currencies)
-1.  [function <span class="apidocSignatureSpan">country-data.lookup.</span>languages ()](#apidoc.element.country-data.lookup.languages)
-
-
-
-# <a name="apidoc.module.country-data"></a>[module country-data](#apidoc.module.country-data)
-
-
-
-# <a name="apidoc.module.country-data.lookup"></a>[module country-data.lookup](#apidoc.module.country-data.lookup)
-
-#### <a name="apidoc.element.country-data.lookup.countries"></a>[function <span class="apidocSignatureSpan">country-data.lookup.</span>countries ()](#apidoc.element.country-data.lookup.countries)
-- description and source-code
-```javascript
-countries = function () { [native code] }
-```
-- example usage
-```shell
-...
-console.log( regions.europe.countries )
-'''
-
-''' javascript
-var lookup = require('country-data').lookup;
-
-// Match a value (grab first from array)
-var france = lookup.countries({name: 'France'})[0];
-
-// Or match one of several possible values.
-var eurozone_countries = lookup.countries({currencies: 'EUR'});
-'''
-
-It is very simple for now - feel free to contribute more helpful accessors.
-...
-```
-
-#### <a name="apidoc.element.country-data.lookup.currencies"></a>[function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies ()](#apidoc.element.country-data.lookup.currencies)
-- description and source-code
-```javascript
-currencies = function () { [native code] }
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.country-data.lookup.languages"></a>[function <span class="apidocSignatureSpan">country-data.lookup.</span>languages ()](#apidoc.element.country-data.lookup.languages)
-- description and source-code
-```javascript
-languages = function () { [native code] }
-```
-- example usage
-```shell
-n/a
 ```
 
 
