@@ -1,6 +1,6 @@
 # npmdoc-country-data
 
-#### api documentation for  [country-data (v0.0.31)](https://github.com/OpenBookPrices/country-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-country-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-country-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-country-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-country-data)
+#### basic api documentation for  [country-data (v0.0.31)](https://github.com/OpenBookPrices/country-data)  [![npm package](https://img.shields.io/npm/v/npmdoc-country-data.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-country-data) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-country-data.svg)](https://travis-ci.org/npmdoc/node-npmdoc-country-data)
 
 #### Data about countries - like their ISO codes and currencies
 
@@ -68,7 +68,8 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "0.0.31"
+    "version": "0.0.31",
+    "bin": {}
 }
 ```
 
