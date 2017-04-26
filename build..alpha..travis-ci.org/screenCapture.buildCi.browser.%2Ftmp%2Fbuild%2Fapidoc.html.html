@@ -56,33 +56,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.countries">
-            function <span class="apidocSignatureSpan">country-data.</span>lookup.countries
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.currencies">
-            function <span class="apidocSignatureSpan">country-data.</span>lookup.currencies
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.languages">
-            function <span class="apidocSignatureSpan">country-data.</span>lookup.languages
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">country-data.</span>callingCodes</span>
 
         </li>
@@ -162,88 +135,10 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.country-data.lookup.countries">module country-data.lookup.countries</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.countries.countries">
-            function <span class="apidocSignatureSpan">country-data.lookup.</span>countries
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.country-data.lookup.currencies">module country-data.lookup.currencies</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.currencies.currencies">
-            function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.country-data.lookup.languages">module country-data.lookup.languages</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.country-data.lookup.languages.languages">
-            function <span class="apidocSignatureSpan">country-data.lookup.</span>languages
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.country-data" id="apidoc.module.country-data">module country-data</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.countries" id="apidoc.element.country-data.lookup.countries">
-        function <span class="apidocSignatureSpan">country-data.</span>lookup.countries
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">lookup.countries = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.currencies" id="apidoc.element.country-data.lookup.currencies">
-        function <span class="apidocSignatureSpan">country-data.</span>lookup.currencies
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">lookup.currencies = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.languages" id="apidoc.element.country-data.lookup.languages">
-        function <span class="apidocSignatureSpan">country-data.</span>lookup.languages
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">lookup.languages = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 
 
@@ -303,7 +198,24 @@ It is very simple for now - feel free to contribute more helpful accessors.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">currencies = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  });
+});
+
+describe("check currencies by code", function () {
+  _.each( currencies, function (currency, name) {
+    describe(name, function () {
+      it(name, function () {
+        if(currency.code) assert.include( lookup.<span class="apidocCodeKeywordSpan">currencies</span>({code: currency.code}), currency
+ );
+      });
+    });
+  });
+});
+
+describe("check languages by name", function () {
+  _.each( languages, function (language, name) {
+...</pre></li>
     </ul>
 
 
@@ -316,76 +228,23 @@ It is very simple for now - feel free to contribute more helpful accessors.
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">languages = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.country-data.lookup.countries" id="apidoc.module.country-data.lookup.countries">module country-data.lookup.countries</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.countries.countries" id="apidoc.element.country-data.lookup.countries.countries">
-        function <span class="apidocSignatureSpan">country-data.lookup.</span>countries
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">countries = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-console.log( regions.europe.countries )
-```
+    });
+  });
 
-``` javascript
-var lookup = require('country-data').lookup;
+  describe("check languages by name", function () {
+    _.each( languages, function (language, name) {
+      describe(name, function () {
+        it(name, function () {
+          if(language.name) assert.include( lookup.<span class="apidocCodeKeywordSpan">languages</span>({name: language.name}),
+language );
+        });
+      });
+    });
+  });
 
-// Match a value (grab first from array)
-var france = lookup.<span class="apidocCodeKeywordSpan">countries</span>({name: 'France'})[0];
-
-// Or match one of several possible values.
-var eurozone_countries = lookup.countries({currencies: 'EUR'});
-```
-
-It is very simple for now - feel free to contribute more helpful accessors.
+});
 ...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.country-data.lookup.currencies" id="apidoc.module.country-data.lookup.currencies">module country-data.lookup.currencies</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.currencies.currencies" id="apidoc.element.country-data.lookup.currencies.currencies">
-        function <span class="apidocSignatureSpan">country-data.lookup.</span>currencies
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">currencies = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.country-data.lookup.languages" id="apidoc.module.country-data.lookup.languages">module country-data.lookup.languages</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.country-data.lookup.languages.languages" id="apidoc.element.country-data.lookup.languages.languages">
-        function <span class="apidocSignatureSpan">country-data.lookup.</span>languages
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">languages = function () { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
